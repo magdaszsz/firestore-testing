@@ -6,44 +6,30 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Cloud Cafe</h1>
 
-    <div class="content">
-      <form id="add-cafe-form">
-      <input type="text" name="name" placeholder="add name">
-      <input type="text" name="city" placeholder="add city">
-      <button type="submit">Add cafe</button>
-        </form>
-      <ul id="cafe-list"></ul>
-    </div>
-    <section id="whenSignedOut">
+<form>
+  <input type="text" name="task" placeholder="what would you like to do?">
+  <input type="date" name="date" id="date">
+  <button type="submit">Submit</button>
+</form>
+<div class="tasks-container">
 
-    <button id="signInBtn">Sign in with Google</button>
+</div>
 
-  </section>
-
-  <section id="whenSignedIn" hidden="true">
-
-    <div id="userDetails"></div>
-
-    <button id="signOutBtn">Sign Out</button>
-
-  </section>
-
-    <script>
-      // Your web app's Firebase configuration
-      var firebaseConfig = {
-        apiKey: "AIzaSyChzf0ino6QxhueCnwYbVCneMJTcoQXzAk",
-        authDomain: "testing-testing-29840.firebaseapp.com",
-        projectId: "testing-testing-29840",
-        storageBucket: "testing-testing-29840.appspot.com",
-        messagingSenderId: "912788674254",
-        appId: "1:912788674254:web:e514fa3d8007be25cd629f",
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      const db = firebase.firestore();
-    </script>
+   <script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCuGbn8b5E3TuS_LcOEFmgqf9HrRzsNtBQ",
+    authDomain: "hello-again-30343.firebaseapp.com",
+    projectId: "hello-again-30343",
+    storageBucket: "hello-again-30343.appspot.com",
+    messagingSenderId: "985006411217",
+    appId: "1:985006411217:web:35bd037e8ba0229c1b24f0"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+</script>
     <script src="app.js"></script>
   </body>
 </html>

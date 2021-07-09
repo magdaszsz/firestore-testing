@@ -1,5 +1,5 @@
 body{
-    background: #eab0dc;
+    background: rgba(46, 134, 222, .5);
     font-family: ubuntu;
 }
 
@@ -77,7 +77,7 @@ form input{
 
 form input:focus{
     outline: none;
-    border-bottom: 3px solid #88236f;
+    border-bottom: 3px solid rgba(52, 31, 151,1.0);
     padding-bottom: 8px;
     transition: all ease 0.2s;
 }
@@ -99,4 +99,24 @@ button{
     font-family: ubuntu;
     letter-spacing: 1px;
     color: #999;
+}
+
+.tasks-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.task {
+    border: 2px solid #999;
+    border-radius: 10px;
+    width: 15rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    background: hsla(0, 22%, 90%, 0.452);
+}
+
+.task:hover {
+    background-color: #fff;
+    cursor: pointer;
 }
